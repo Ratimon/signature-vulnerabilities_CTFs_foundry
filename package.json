@@ -1,0 +1,44 @@
+{
+  "name": "signature-vulnerabilities_ctfs_foundry",
+  "version": "1.0.0",
+  "description": "``` forge install openzeppelin/openzeppelin-contracts@v4.9.3 ```",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib",
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ratimon/signature-vulnerabilities_CTFs_foundry.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Ratimon/signature-vulnerabilities_CTFs_foundry/issues"
+  },
+  "homepage": "https://github.com/Ratimon/signature-vulnerabilities_CTFs_foundry#readme",
+  "devDependencies": {
+    "@nomicfoundation/hardhat-chai-matchers": "^2.0.0",
+    "@nomicfoundation/hardhat-ethers": "^3.0.0",
+    "@nomicfoundation/hardhat-network-helpers": "^1.0.0",
+    "@nomicfoundation/hardhat-toolbox": "^3.0.0",
+    "@nomicfoundation/hardhat-verify": "^1.0.0",
+    "@typechain/ethers-v6": "^0.4.0",
+    "@typechain/hardhat": "^8.0.0",
+    "@types/chai": "^4.2.0",
+    "@types/mocha": ">=9.1.0",
+    "@types/node": ">=16.0.0",
+    "chai": "^4.2.0",
+    "ethers": "^6.4.0",
+    "hardhat": "^2.17.1",
+    "hardhat-gas-reporter": "^1.0.8",
+    "hardhat-preprocessor": "^0.1.5",
+    "solidity-coverage": "^0.8.0",
+    "ts-node": ">=8.0.0",
+    "typechain": "^8.1.0",
+    "typescript": ">=4.5.0"
+  }
+}
