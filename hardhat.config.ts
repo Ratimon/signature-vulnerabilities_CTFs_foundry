@@ -1,11 +1,11 @@
 import { HardhatUserConfig } from "hardhat/config";
+import 'dotenv/config';
 import fs from "fs";
 import "hardhat-preprocessor"
 import "@nomicfoundation/hardhat-toolbox";
 
 const config: HardhatUserConfig = {
   solidity: {
-
     compilers: 
   [
     {
@@ -23,6 +23,13 @@ const config: HardhatUserConfig = {
       }
     }
   ]
+  },
+
+  networks: {
+    polygon: {
+      url: `${process.env.POLYGON_RPC_URL}`,
+      accounts: [`${process.env.PRIVATE_KEY}`]
+    }
   },
 
   preprocess: {
