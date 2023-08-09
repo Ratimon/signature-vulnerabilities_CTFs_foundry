@@ -20,12 +20,14 @@ async function getSenderPublicKey(transactionHash) {
 
     const raw = ethers.Transaction.from(transaction).unsignedSerialized;
     console.log("raw", raw);
+    // console.log("raw as hex", raw .toString('hex'));
 
     const msgHash = ethers.keccak256(raw); // as specified by ECDSA
     console.log("msgHash", msgHash);
     const msgBytes = ethers.getBytes(msgHash); // create binary hash
 
     console.log("msgBytes", msgBytes);
+    // console.log("a hash of the unsigned tx",msgHash.toString('hex'));
 
     const publicKey = ethers.SigningKey.recoverPublicKey(msgBytes, signature);
     console.log("publicKey", publicKey);

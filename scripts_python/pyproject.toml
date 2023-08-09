@@ -8,6 +8,7 @@ packages = [{include = "scripts_python"}]
 
 [tool.poetry.dependencies]
 python = "^3.10"
+ecdsa = "^0.18.0"
 
 
 [build-system]

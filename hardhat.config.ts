@@ -26,6 +26,10 @@ const config: HardhatUserConfig = {
   },
 
   networks: {
+    mainnet: {
+      url: `${process.env.MAINNET_RPC_URL}`,
+      accounts: [`${process.env.PRIVATE_KEY}`]
+    },
     polygon: {
       url: `${process.env.POLYGON_RPC_URL}`,
       accounts: [`${process.env.PRIVATE_KEY}`]

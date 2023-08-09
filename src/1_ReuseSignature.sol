@@ -1,6 +1,8 @@
 // SPDX-License-Identifier: UNLICENSED
 pragma solidity =0.8.19;
 
+import "@forge-std/console2.sol";
+
 import {ECDSA} from "@openzeppelin/contracts/utils/cryptography/ECDSA.sol";
 
 contract ReuseSignature {
@@ -14,6 +16,8 @@ contract ReuseSignature {
     ) public {
         bytes32 signedMessageHash = keccak256(abi.encode(message))
             .toEthSignedMessageHash();
+
+        // console2.logBytes32(signedMessageHash);
         require(
             signedMessageHash.recover(signature) == verifyingAddress,
             "signature not valid"
