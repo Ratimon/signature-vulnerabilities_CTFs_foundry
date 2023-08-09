@@ -1,13 +1,13 @@
 const { ethers } = require("hardhat");
 
 // Ran this with polygon as the hardhat network
-// Which will get the public key that signed the transaction with hash 0xa2b0dbab8a435b11de83bbbc6dffb7661d6ffc7980d7c5d6f911dab2afc35812
+// Which will get the public key that signed the transaction with hash 0xf25e29a951681c6dc49db7697ba3cafe0574c131e919966519a5ba11293c33ec
 
 async function getSenderPublicKey(transactionHash) {
     // Fetch the transaction details
     const transaction = await ethers.provider.getTransaction(transactionHash);
 
-    console.log("Transactio", transaction);
+    console.log("Transaction", transaction);
 
     const expandedSig = {
         r: transaction.signature.r,
