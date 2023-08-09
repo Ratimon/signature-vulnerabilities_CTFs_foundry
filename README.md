@@ -63,4 +63,8 @@ paths: {
 poetry new scripts_python`
 ```
 
+## Running Scripts
+```sh
+npx hardhat run --network polygon scripts_hardhat/1_getPublickeyV6.j
+```
 
