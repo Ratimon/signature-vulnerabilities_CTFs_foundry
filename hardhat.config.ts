@@ -48,7 +48,7 @@ const config: HardhatUserConfig = {
     }),
   },
   paths: {
-    sources: "./src",
+    sources: "./src_hardhat",
     cache: "./cache_hardhat",
   },
   typechain: {

@@ -4,7 +4,7 @@
 forge install openzeppelin/openzeppelin-contracts@v4.9.3
 ```
 
-## Integrating hardhat
+## Integrating Hardhat
 
 1. 
 
@@ -57,6 +57,10 @@ paths: {
   cache: "./cache_hardhat",
 },
 ```
+## Integrating Python
 
+```sh
+poetry new scripts_python`
+```
 
 
