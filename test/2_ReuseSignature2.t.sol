@@ -4,7 +4,7 @@ pragma solidity =0.8.19;
 import {Test} from "@forge-std/Test.sol";
 import {ReuseSignature2} from "@main/2_ReuseSignature2.sol";
 
-contract ReuseSignatureTest is Test {
+contract ReuseSignature2Test is Test {
 
     string mnemonic = "test test test test test test test test test test test junk";
     uint256 deployerPrivateKey = vm.deriveKey(mnemonic, "m/44'/60'/0'/0/", 1); //  address = 0x70997970C51812dc3A010C7d01b50e0d17dc79C8
