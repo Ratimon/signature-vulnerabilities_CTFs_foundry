@@ -80,6 +80,8 @@ else:
 # Calculate the v value for Ethereum
 recovery_id = 28 if s > curve.order // 2 else 27
 
+print("v:", recovery_id)
+
 # Combine r, s, and v to create a signature in Solidity format
 signature_solidity = r.to_bytes(32, byteorder="big") + s.to_bytes(32, byteorder="big") + bytes([recovery_id])
 
