@@ -4,7 +4,7 @@ pragma solidity =0.8.19;
 // import "@forgex-std/console2.sol";
 
 import {Test} from "@forge-std/Test.sol";
-import {ReuseSignature} from "@main/1_ReuseSignature.sol";
+import {ReuseSignature1} from "@main/1_ReuseSignature1.sol";
 
 contract ReuseSignatureTest is Test {
 
@@ -20,12 +20,12 @@ contract ReuseSignatureTest is Test {
     uint256 polygonFork;
     string POLYGON_RPC_URL = vm.rpcUrl("POLYGON");
 
-    ReuseSignature reuseSignature;
+    ReuseSignature1 reuseSignature;
 
     function setUp() public {
         polygonFork = vm.createFork(POLYGON_RPC_URL);
        
-        reuseSignature = ReuseSignature(0xa94a3AB66FaBc6e9F672924a76587c16322752E9);
+        reuseSignature = ReuseSignature1(0xa94a3AB66FaBc6e9F672924a76587c16322752E9);
     }
 
     function testFork_isSolved() public {
