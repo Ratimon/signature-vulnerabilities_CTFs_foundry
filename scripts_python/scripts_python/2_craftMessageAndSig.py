@@ -28,6 +28,8 @@ curve = ecdsa.SECP256k1
 G = curve.generator
 n = G.order()
 
+# npx hardhat run --network polygon scripts_hardhat/2_getPublickeyV6.j
+
 # 0x046ebd43be3f85870a1612883ffa70fc1a3daed9e953f6107a01f71dd7fe4e9e8f875264784b9df43b4faae23e7d582764111ad91f4eb79d0005f5a8bf0976cf31
 # 0x046ebd43be3f85870a1612883ffa70fc1a3daed9e953f6107a01f71dd7fe4e9e
 # 0x8f875264784b9df43b4faae23e7d582764111ad91f4eb79d0005f5a8bf0976cf31

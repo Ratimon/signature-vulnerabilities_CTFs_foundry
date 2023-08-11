@@ -65,6 +65,11 @@ poetry new scripts_python`
 
 ## Running Scripts
 ```sh
-npx hardhat run --network polygon scripts_hardhat/1_getPublickeyV6.j
+npx hardhat run --network polygon scripts_hardhat/2_getPublickeyV6.j
+```
+
+```sh
+cd scripts_python
+poetry run python scripts_python/2_craftMessageAndSig.py
 ```
 

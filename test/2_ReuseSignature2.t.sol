@@ -30,7 +30,7 @@ contract ReuseSignature2Test is Test {
 
         // use any signature combination
         // cd scripts_python
-        // poetry run python scripts_python/1_craftMessageAndSig.py
+        // poetry run python scripts_python/2_craftMessageAndSig.py
         uint256 amount = 1 ether;
         address to = attacker;
         uint8 v = 27;
