@@ -73,3 +73,15 @@ cd scripts_python
 poetry run python scripts_python/2_craftMessageAndSig.py
 ```
 
+
+## Domain Separator
+
+1. name: the dApp or protocol name
+
+2. version: The current version of what the standard calls a “signing domain”. It prevents signatures from one dApp version from working with those of others.
+
+3. chainId: The EIP-155 chain id. Prevents a signature meant for one network from working on another, such as the mainnet.
+
+4. verifyingContract: The Ethereum address of the contract that will verify the resulting signature.
+
+5. salt: A unique 32-byte value hardcoded into both the contract and the dApp meant as a last-resort means to distinguish the dApp from others.

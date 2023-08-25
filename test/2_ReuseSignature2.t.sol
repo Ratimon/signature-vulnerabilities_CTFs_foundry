@@ -39,8 +39,6 @@ contract ReuseSignature2Test is Test {
 
         vm.expectRevert(bytes("invalid signature"));
         reuseSignature.claimAirdrop(amount, to, v, r, s);
-
-
         vm.stopPrank();
 
         vm.prank(deployer);
